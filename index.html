@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mesa International — Threat Intelligence &amp; Abuse Response</title>
+<meta name="description" content="Mesa International investigates malicious, phishing and malware infrastructure, documents verifiable evidence and drives abuse reports through to takedown.">
+<meta property="og:title" content="Mesa International — Threat Intelligence &amp; Abuse Response">
+<meta property="og:description" content="Evidence-first investigation and takedown of malicious domains.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mesa.international/">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://mesa.international/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Cpath d='M6 25V7h4l6 9 6-9h4v18h-4V14l-6 9-6-9v11z' fill='%23e10600'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Mesa International"><span class="logo"></span><b>MESA</b><span class="brand-sub">INTERNATIONAL</span></a>
+    <nav aria-label="Primary">
+      <a href="#about"><span class="en">Company</span><span class="vi">Công ty</span></a>
+      <a href="#services"><span class="en">Services</span><span class="vi">Dịch vụ</span></a>
+      <a href="#process"><span class="en">Process</span><span class="vi">Quy trình</span></a>
+      <a href="#sources"><span class="en">Sources</span><span class="vi">Nguồn dữ liệu</span></a>
+      <a href="#tools"><span class="en">Tools</span><span class="vi">Công cụ</span></a>
+      <a href="#contact"><span class="en">Contact</span><span class="vi">Liên hệ</span></a>
+      <button id="lang" class="lang" type="button" aria-label="Switch language">EN / VI</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero wrap">
+  <div class="hero-text" data-reveal="up">
+    <p class="eyebrow">// threat intelligence &amp; abuse response</p>
+    <h1>
+      <span class="en">We investigate malicious infrastructure and get it <em>taken down</em>.</span>
+      <span class="vi">Chúng tôi điều tra hạ tầng độc hại và đẩy nó đến chỗ bị <em>gỡ bỏ</em>.</span>
+    </h1>
+    <p class="lead">
+      <span class="en">Phishing, malware, scam and illegal gambling domains — verified against multiple intelligence sources, documented with reproducible evidence, and reported to the registrars, hosts and blocklists that can act.</span>
+      <span class="vi">Các domain phishing, malware, lừa đảo và cá cược bất hợp pháp — được xác minh qua nhiều nguồn intelligence, ghi lại bằng bằng chứng có thể tái kiểm chứng, và báo cáo tới registrar, hosting và blocklist có thẩm quyền xử lý.</span>
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#contact"><span class="en">Contact us</span><span class="vi">Liên hệ</span></a>
+      <a class="btn" href="#process"><span class="en">Our process</span><span class="vi">Quy trình của chúng tôi</span></a>
+    </div>
+  </div>
+
+  <aside class="term" aria-label="Illustrative terminal example" data-reveal="scale">
+    <div class="term-bar"><i></i><i></i><i></i><span>investigate.sh — illustrative</span></div>
+<pre><span class="c"># example only — not a real case</span>
+<span class="p">$</span> investigate hxxps://login-example[.]invalid
+<span class="g">[+]</span> resolve     A / NS / MX collected
+<span class="g">[+]</span> rdap        registrar + created date saved
+<span class="g">[+]</span> reputation  URLhaus · VirusTotal · Spamhaus
+<span class="g">[+]</span> screenshot  captured + SHA-256 hashed
+<span class="y">[!]</span> verdict     phishing (credential harvest)
+<span class="p">$</span> report --registrar --host --blocklists
+<span class="g">[+]</span> evidence pack ready<span class="blink">_</span></pre>
+  </aside>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section wrap">
+  <h2 data-reveal="up"><span class="n">01</span> <span class="en">Company</span><span class="vi">Công ty</span></h2>
+  <div class="about">
+    <p class="big" data-reveal="up">
+      <span class="en">Mesa International works on one problem: shortening the time between a malicious domain going live and it going offline.</span>
+      <span class="vi">Mesa International tập trung vào một vấn đề: rút ngắn khoảng thời gian từ lúc một domain độc hại hoạt động đến lúc nó bị gỡ.</span>
+    </p>
+    <ul class="principles" data-stagger>
+      <li><b><span class="en">Evidence first</span><span class="vi">Bằng chứng trước tiên</span></b>
+        <span class="en">Every claim is backed by timestamps, hashes and cross-source verdicts a reviewer can reproduce.</span>
+        <span class="vi">Mọi kết luận đều có timestamp, hash và đối chiếu nhiều nguồn để người xét duyệt tự kiểm chứng.</span></li>
+      <li><b><span class="en">Handled safely</span><span class="vi">Xử lý an toàn</span></b>
+        <span class="en">Indicators are defanged and samples are never executed on production systems.</span>
+        <span class="vi">Indicator luôn được defang và mẫu độc hại không bao giờ chạy trên hệ thống thật.</span></li>
+      <li><b><span class="en">Source-neutral</span><span class="vi">Trung lập về nguồn</span></b>
+        <span class="en">No single vendor verdict decides an outcome; we weigh independent sources.</span>
+        <span class="vi">Không dựa vào kết luận của một đơn vị duy nhất; chúng tôi cân nhắc nhiều nguồn độc lập.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section wrap">
+  <h2 data-reveal="up"><span class="n">02</span> <span class="en">Services</span><span class="vi">Dịch vụ</span></h2>
+  <div class="grid4" data-stagger>
+    <article class="card">
+      <h3><span class="en">Domain &amp; infrastructure investigation</span><span class="vi">Điều tra domain &amp; hạ tầng</span></h3>
+      <p><span class="en">DNS, WHOIS/RDAP, hosting and redirect-chain analysis to map who operates a malicious site and how it is delivered.</span><span class="vi">Phân tích DNS, WHOIS/RDAP, hosting và chuỗi redirect để xác định ai vận hành và site được phát tán ra sao.</span></p>
+    </article>
+    <article class="card">
+      <h3><span class="en">Evidence collection</span><span class="vi">Thu thập bằng chứng</span></h3>
+      <p><span class="en">Timestamped screenshots, hashes, headers and verdicts packaged into a clear evidence pack.</span><span class="vi">Ảnh chụp có timestamp, hash, header và kết luận được đóng gói thành bộ bằng chứng rõ ràng.</span></p>
+    </article>
+    <article class="card">
+      <h3><span class="en">Abuse reporting &amp; takedown</span><span class="vi">Báo cáo abuse &amp; gỡ bỏ</span></h3>
+      <p><span class="en">Actionable reports to registrars, hosting providers and blocklist operators, with follow-up until resolved.</span><span class="vi">Báo cáo có thể hành động ngay gửi registrar, hosting, blocklist và theo dõi cho đến khi được xử lý.</span></p>
+    </article>
+    <article class="card">
+      <h3><span class="en">Automation &amp; API integration</span><span class="vi">Tự động hoá &amp; tích hợp API</span></h3>
+      <p><span class="en">Python and shell tooling that turns repetitive triage and reporting into a repeatable pipeline.</span><span class="vi">Công cụ Python/shell biến việc triage và report lặp lại thành quy trình tái sử dụng được.</span></p>
+    </article>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section wrap">
+  <h2 data-reveal="up"><span class="n">03</span> <span class="en">Process</span><span class="vi">Quy trình</span></h2>
+  <ol class="steps" data-stagger>
+    <li><b>Detect</b><span class="en">A suspicious URL arrives from a report, a feed or our own monitoring.</span><span class="vi">URL đáng ngờ đến từ báo cáo, feed hoặc hệ thống theo dõi riêng.</span></li>
+    <li><b>Verify</b><span class="en">Checked against multiple independent sources — never a single verdict.</span><span class="vi">Đối chiếu nhiều nguồn độc lập, không dựa vào một kết luận duy nhất.</span></li>
+    <li><b>Document</b><span class="en">Safe capture: defanged indicators, screenshots, hashes, timestamps.</span><span class="vi">Lưu an toàn: indicator đã defang, ảnh chụp, hash, timestamp.</span></li>
+    <li><b>Report</b><span class="en">Sent to the party that can actually act: registrar, host, CDN or blocklist.</span><span class="vi">Gửi đúng bên có thể xử lý: registrar, host, CDN hoặc blocklist.</span></li>
+    <li><b>Follow up</b><span class="en">Outcome tracked and re-checked until the content is down.</span><span class="vi">Theo dõi kết quả và kiểm tra lại đến khi nội dung bị gỡ.</span></li>
+  </ol>
+</section>
+
+<!-- SOURCES -->
+<section id="sources" class="section wrap">
+  <h2 data-reveal="up"><span class="n">04</span> <span class="en">Intelligence sources &amp; stack</span><span class="vi">Nguồn intelligence &amp; công nghệ</span></h2>
+  <h3 class="sub" data-reveal="up"><span class="en">Threat intelligence &amp; reputation</span><span class="vi">Threat intelligence &amp; uy tín domain</span></h3>
+  <ul class="chips" data-stagger>
+    <li>URLhaus</li><li>Spamhaus</li><li>VirusTotal</li><li>ScamAdviser</li><li>urlscan.io</li><li>Google Safe Browsing</li><li>PhishTank</li><li>AbuseIPDB</li>
+  </ul>
+  <h3 class="sub" data-reveal="up"><span class="en">Engineering</span><span class="vi">Kỹ thuật</span></h3>
+  <ul class="chips alt" data-stagger>
+    <li>Linux</li><li>Bash</li><li>Python</li><li>REST APIs</li><li>DNS / RDAP</li><li>Git</li><li>Web hosting &amp; WordPress ops</li>
+  </ul>
+  <p class="note" data-reveal="up">
+    <span class="en">Third-party names only describe the sources we work with. Mesa International is not affiliated with, sponsored by or endorsed by any of them.</span>
+    <span class="vi">Tên các dịch vụ bên thứ ba chỉ để mô tả nguồn chúng tôi sử dụng. Mesa International không liên kết, tài trợ hay được bảo chứng bởi bất kỳ bên nào trong số đó.</span>
+  </p>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="section wrap">
+  <h2 data-reveal="up"><span class="n">05</span> <span class="en">Internal tools</span><span class="vi">Công cụ nội bộ</span></h2>
+  <div class="grid2" data-stagger>
+    <article class="card proj">
+      <span class="tag">Python · API</span>
+      <h3>Bulk URL reporter</h3>
+      <p><span class="en">Queues and submits malicious URLs to multiple threat-intelligence platforms, tracking the status of every submission.</span><span class="vi">Xếp hàng và gửi URL độc hại tới nhiều nền tảng threat intelligence, theo dõi trạng thái từng lần gửi.</span></p>
+    </article>
+    <article class="card proj">
+      <span class="tag">Python · CLI</span>
+      <h3>Domain expiry checker</h3>
+      <p><span class="en">Command-line tool that checks domain expiry dates in bulk so lapsing domains are never missed.</span><span class="vi">Công cụ dòng lệnh kiểm tra hạn domain hàng loạt để không bỏ sót domain sắp hết hạn.</span></p>
+    </article>
+  </div>
+  <p class="more" data-reveal="up"><a class="btn" href="https://github.com/bieehoang" target="_blank" rel="noopener noreferrer"><span class="en">GitHub →</span><span class="vi">GitHub →</span></a></p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section wrap">
+  <h2 data-reveal="up"><span class="n">06</span> <span class="en">Contact</span><span class="vi">Liên hệ</span></h2>
+  <div class="contact">
+    <div data-reveal="up">
+      <p class="lead small">
+        <span class="en">Need a domain investigated, an abuse report prepared, or a reporting workflow automated? Send us a message.</span>
+        <span class="vi">Cần điều tra domain, soạn báo cáo abuse hoặc tự động hoá quy trình report? Hãy gửi tin nhắn cho chúng tôi.</span>
+      </p>
+      <p class="mail"><a href="mailto:company@mesa.international">company@mesa.international</a></p>
+      <p class="note"><span class="en">Sharing a suspicious URL? Please defang it (hxxps://example[.]com) so nobody clicks it by accident.</span><span class="vi">Nếu gửi URL đáng ngờ, hãy defang (hxxps://example[.]com) để tránh bấm nhầm.</span></p>
+    </div>
+
+    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate data-reveal="up">
+      <label>Name<input name="name" type="text" required maxlength="100" autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required maxlength="150" autocomplete="email"></label>
+      <label>Subject<input name="_subject" type="text" required maxlength="150"></label>
+      <label>Message<textarea name="message" rows="6" required maxlength="4000"></textarea></label>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+      <button class="btn primary" type="submit"><span class="en">Send message</span><span class="vi">Gửi tin nhắn</span></button>
+      <p id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>© <span id="year">2026</span> Mesa International · mesa.international</span>
+    <span class="dim"><span class="en">Evidence first. Defang everything.</span><span class="vi">Bằng chứng trước tiên. Luôn defang indicator.</span></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
